@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "username": "mp",
+    "password": "mp",
+    "cart": [],
+    "orders": []
+  },
+  {
+    "id": 2,
+    "username": "mithun",
+    "password": "mithun",
+    "cart": [],
+    "orders": []
+  },
+  {
+    "id": 3,
+    "username": "prakash",
+    "password": "prakash",
+    "cart": [],
+    "orders": []
+  }
+]

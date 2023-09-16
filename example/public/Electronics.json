@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "Printers",
+    "image": "https://rukminim2.flixcart.com/image/200/200/ke4kjgw0/printer/v/8/g/brother-mfc-t4500dw-original-imafuvbypfjuzjkb.jpeg?q=70",
+    "price": 10190,
+    "product": "HP"
+  },
+  {
+    "id": 2,
+    "name": "Printers",
+    "image": "https://rukminim2.flixcart.com/image/200/200/xif0q/printer/5/v/a/mf244dw-digital-canon-original-imagrfq3svgmczfk.jpeg?q=70",
+    "price": 2336,
+"product": "Canon"
+  },
+{
+    "id": 3,
+    "name": "Moniters",
+    "image": "https://rukminim2.flixcart.com/image/200/200/xif0q/monitor/8/4/w/q27h-10-full-hd-26-8-66a7gac2ph-lenovo-original-imagheynmnwxbqnf.jpeg?q=70",
+    "price": 7949,
+"product": "Lenovo"
+
+  },
+{
+    "id": 4,
+    "name": "Moniters",
+    "image": "https://rukminim2.flixcart.com/image/200/200/xif0q/monitor/x/y/o/ls49a950uiwxxl-uwqhd-49-ls49a950uiwxxl-samsung-original-imagz8ydgfwg5en2.jpeg?q=70",
+    "price": 9999,
+"product": "Samsung"
+  },
+{
+    "id": 5,
+    "name": "Top Mirrorless Cam",
+    "image": "https://rukminim2.flixcart.com/image/200/200/krdtlzk0/dslr-camera/o/i/a/s1rmga-lumix-dc-s1rmga-with-24-105-mm-lens-panasonic-original-imag56jhdnyc4rhz.jpeg?q=70",
+    "price": 23990,
+"product": "Panasonic"
+  },
+{
+    "id": 6,
+    "name": "Moniters",
+    "image": "https://rukminim2.flixcart.com/image/200/200/kx9as280/monitor/o/n/a/predator-cg437k-4k-ultra-hd-42-5-um-mc7si-p01-acer-original-imag9r99gdhyazn6.jpeg?q=70",
+    "price": 5990,
+     "product": "Acer"
+  }
+  
+]

@@ -1,0 +1,61 @@
+/* Global.css */
+
+/* Styles for the carousel container */
+.simple-carousel {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Styles for the carousel content */
+  .carousel-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styles for the carousel content inner container */
+  .carousel-content-inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Styles for the carousel items */
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+  }
+  
+  /* Styles for the carousel buttons */
+  .carousel-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-button {
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  /* Styles for the previous and next buttons */
+  .prev-button {
+    border-radius: 50% 0 0 50%;
+  }
+  
+  .next-button {
+    border-radius: 0 50% 50% 0;
+  }
+  
