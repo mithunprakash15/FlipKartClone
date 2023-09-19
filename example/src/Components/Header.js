@@ -17,10 +17,14 @@ import DialogContent from '@mui/material/DialogContent';
 import Button from '@mui/material/Button';
 import { useEffect } from 'react';
 import LoginPop from './LoginPop';
+import RegisterPop from './Registerpop';
 function Header({setSearchClicked , setsearchContent , handleLogoClick , handleCartClick}) {
     const [search , setSearch] = useState();
     const [filled,setFilled] =useState(false);
     const [loginDialogOpen, setLoginDialogOpen] = useState(false);
+    const [registerDialogOpen, setRegisterDialogOpen] = useState(false);
+
+
     
    const [username , setUsername] = useState('')
     const searchHandler = event =>{
@@ -48,6 +52,10 @@ function Header({setSearchClicked , setsearchContent , handleLogoClick , handleC
       
   const handleLoginDialogClose = () => {
     setLoginDialogOpen(false); 
+  };
+  const handleRegisterButtonClick = () => {
+    setRegisterDialogOpen(true);
+    setLoginDialogOpen(false)
   };
   
     
@@ -82,41 +90,43 @@ function Header({setSearchClicked , setsearchContent , handleLogoClick , handleC
                 
             </div>
             <div className='header-third'>
-            {!username?(  <button onClick={handleLoginButtonClick}>
-                <Tippy content={
-                        <Login></Login>
-                    }
-                    interactive={true}
-                    offset={
-                        [5, 20]
-                    }
-                    theme="light"
-                    animation="scale">
-                    <span>Login</span>   
-                </Tippy>
-            </button>) : (<button>
-                <Tippy content={
-                        <Login></Login>
-                    }
-                    interactive={true}
-                    offset={
-                        [5, 20]
-                    }
-                    theme="light"
-                    animation="scale">
-                    <span>{username}</span>
-                   
-                </Tippy>
-            </button>)}
-         
-               
-                <Dialog open={loginDialogOpen} onClose={handleLoginDialogClose}>
+            {!username ? (
+          <button onClick={handleLoginButtonClick}>
+            <Tippy content={<Login></Login>}
+              interactive={true}
+              offset={[5, 20]}
+              theme="light"
+              animation="scale">
+              <span>Login</span>
+            </Tippy>
+          </button>
+        ) : (
+          <button>
+            <Tippy content={<Login></Login>}
+              interactive={true}
+              offset={[5, 20]}
+              theme="light"
+              animation="scale">
+              <span>{username}</span>
+            </Tippy>
+          </button>
+        )}
+        <Dialog open={loginDialogOpen} onClose={handleLoginDialogClose}>
           <DialogContent>
-          <LoginPop onClose={() => setLoginDialogOpen(false)} />
-
+          <LoginPop
+              onClose={() => setLoginDialogOpen(false)}
+              onRegisterClick={handleRegisterButtonClick} 
+            />
           </DialogContent>
-         
         </Dialog>
+        <Dialog
+        open={registerDialogOpen}
+        onClose={() => setRegisterDialogOpen(false)}
+      >
+        <DialogContent>
+          <RegisterPop onClose={() => setRegisterDialogOpen(false)} />
+        </DialogContent>
+      </Dialog>
             </div>
             
             <div className='header-fourth'>
